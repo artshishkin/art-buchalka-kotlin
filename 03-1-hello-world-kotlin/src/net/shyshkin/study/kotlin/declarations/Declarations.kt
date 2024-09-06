@@ -1,6 +1,7 @@
 package net.shyshkin.study.kotlin.declarations
 
 import net.shyshkin.study.kotlin.Employee
+import net.shyshkin.study.kotlin.EmployeeSet
 
 fun declarations() {
     //val
@@ -37,6 +38,9 @@ fun declarations() {
     } else {
         employee2 = Employee("Tanya", 333)
     }
+
+    val employeeSet: EmployeeSet = HashSet()
+    println(employeeSet)
 
 }
 
