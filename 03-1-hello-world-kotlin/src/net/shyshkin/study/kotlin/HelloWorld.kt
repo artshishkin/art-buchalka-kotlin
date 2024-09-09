@@ -1,5 +1,7 @@
 package net.shyshkin.study.kotlin
 
+import net.shyshkin.study.kotlin.bitwise.bitOperations
+import net.shyshkin.study.kotlin.casting.casting
 import net.shyshkin.study.kotlin.declarations.declarations
 import net.shyshkin.study.kotlin.difference.differences
 import net.shyshkin.study.kotlin.equality.compareEquality
@@ -14,6 +16,10 @@ fun main(args: Array<String>) {
     differences()
 
     compareEquality()
+
+    bitOperations()
+
+    casting()
 
 }
 
