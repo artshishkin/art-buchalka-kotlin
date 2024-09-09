@@ -5,6 +5,7 @@ import net.shyshkin.study.kotlin.casting.casting
 import net.shyshkin.study.kotlin.declarations.declarations
 import net.shyshkin.study.kotlin.difference.differences
 import net.shyshkin.study.kotlin.equality.compareEquality
+import net.shyshkin.study.kotlin.raw_strings.rawStrings
 import net.shyshkin.study.kotlin.stringtemplate.stringTemplate
 
 typealias EmployeeSet = Set<Employee>
@@ -23,6 +24,8 @@ fun main(args: Array<String>) {
     casting()
 
     stringTemplate()
+
+    rawStrings()
 
 }
 
