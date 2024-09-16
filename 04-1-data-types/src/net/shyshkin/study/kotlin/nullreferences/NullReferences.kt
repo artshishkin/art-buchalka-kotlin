@@ -1,6 +1,17 @@
 package net.shyshkin.study.kotlin.nullreferences
 
 fun main(args: Array<String>) {
+
+    escapingNulls()
+
+    arrayOfNullsFun()
+
+    println("end")
+
+}
+
+fun escapingNulls() {
+
     var str: String? = "This is not a NULL" // ? - means that this variable is of nullable type
     if (str != null) { //similar to smart-casting
         str.lowercase()
@@ -49,10 +60,23 @@ fun main(args: Array<String>) {
 
     println(strNull == str)
 
-    println("end")
-
 }
 
 fun printText(text: String) {
     println(text)
+}
+
+fun arrayOfNullsFun() {
+
+    println("arrayOfNullsFun")
+
+    val nullableInts: Array<Int?> = arrayOfNulls<Int>(5) //if you want to create of objects but do not want to initialize it
+
+    nullableInts[1] = 123
+
+    nullableInts.forEach { println(it) }
+
+    println("even if null then you can call toString(): nullableInts[3].toString() = ${nullableInts[3].toString()}")
+
+
 }
