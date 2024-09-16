@@ -10,4 +10,10 @@ public class DummyClass {
         return onVacation ? "I'm on vacation" : "I'm working";
     }
 
+    public void printNumbers(int[] numbs) {
+        for (int numb : numbs) {
+            System.out.println(numb);
+        }
+    }
+
 }
