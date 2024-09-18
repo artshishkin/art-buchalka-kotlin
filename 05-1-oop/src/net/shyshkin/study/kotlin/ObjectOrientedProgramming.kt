@@ -6,6 +6,7 @@ import net.shyshkin.study.kotlin.constants.constants
 import net.shyshkin.study.kotlin.data.dataClasses
 import net.shyshkin.study.kotlin.functions.extensionFunctions
 import net.shyshkin.study.kotlin.functions.functionBasics
+import net.shyshkin.study.kotlin.inheritance.inheritance
 import net.shyshkin.study.kotlin.properties.properties
 
 fun main(args: Array<String>) {
@@ -23,5 +24,7 @@ fun main(args: Array<String>) {
     functionBasics()
 
     extensionFunctions()
+
+    inheritance()
 
 }
