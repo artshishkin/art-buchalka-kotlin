@@ -15,7 +15,7 @@ abstract class Printer(val modelName: String) {
     abstract fun bestSellingPrice(): BigDecimal
 }
 
-open class LaserPrinter(modelName: String) : Printer(modelName) {
+open class LaserPrinter(modelName: String) : Printer(modelName), MyInterface {
 
     //we want that every subclass of a LaserPrinter uses THIS implementation of a function
     //so we disable this fun to be overriden by using `final` keyword
@@ -23,6 +23,15 @@ open class LaserPrinter(modelName: String) : Printer(modelName) {
     override fun type() = "laser"
 
     override fun bestSellingPrice() = BigDecimal("123.56")
+    override val someProperty: Int = 123
+    override val propertyWithDefaultValue: Int
+        get() = 222
+
+    override fun myFunction(str: String): String {
+        TODO("Not yet implemented")
+    }
+
+
 
 }
 
